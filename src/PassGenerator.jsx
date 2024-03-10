@@ -34,9 +34,9 @@ function PassGenerator() {
 	}, [length, numAllowed, charAllowed, passwordGenerator]);
 
 	return (
-		<div className="w-full h-screen bg-slate-800 text-white p-5 flex flex-col items-center py-32">
+		<div className="w-full pt-16 pb-72 bg-slate-800 text-white flex flex-col items-center">
 			<div className="w-1/2 rounded-xl bg-gray-600 p-16 ">
-				<h1 className="md:text-4xl text-3xl text-center">Password Generator</h1>
+				<h1 className="text-4xl text-center">Password Generator</h1>
 				<div className="w-full flex items-center justify-center">
 					<input
 						type="text"
@@ -44,7 +44,7 @@ function PassGenerator() {
 						placeholder="password"
 						readOnly
 						ref={passwordRef}
-						className="w-auto md:w-1/2 rounded-l-md px-4 py-2 my-5 outline-none text-black font-sans text-lg"
+						className="w-full rounded-l-md px-4 py-2 my-5 outline-none text-black font-sans text-lg"
 					/>
 					<button
 						onClick={copyToClipboard}
